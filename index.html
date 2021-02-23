@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
+    <title>Аквила</title>
     <style>
         body {
-            margin: 0em;
+            margin: 0px;
         }
-        .one {
-            position: absolute;
-            background-color: blue;
-            width: 15em;
-            height: 10em;
-            top: 5em; 
-            left: 5em;
+
+        .container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* align-content: space-between; */
+            /* flex-direction: row; */
+            justify-content: space-between;
+
+            color: cornsilk;
+            text-align: center;
+            width: 300px;
+            /* border: 2px solid black; */
+            padding: 0px;
+
         }
-        .two {
-            position: relative;
-            background-color: red;
-            width: 15em;
-            height: 10em;
-            top: 10em; 
-            left: 12.5em;
+
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
-        .three {
-            position: relative;
-            background-color: green;
-            width: 15em;
-            height: 10em;
-            top: 5em; 
-            left: 20em;
+
+        .item2 {
+            background-color: brown;
+            height: 100px;
+            margin-top: -20px;
+            margin-bottom: 5px;
         }
-        .four {
-            position: relative;
-            background-color: yellow;
-            width: 15em;
-            height: 10em;
-            top: 0em; 
-            left: 27.5em;
+
+        .item3 {
+            background-color: rgb(28, 82, 153);
+            height: 30px;
+            width: 300px;
+            margin-top: -20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-bottom: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button :hover {
+            border: 2px solid black;
+
         }
     </style>
 </head>
 
 <body>
-   <div class = "one"></div>
-   <div class = "two"></div> 
-   <div class = "three"></div> 
-   <div class = "four"></div>  
+    <div class="container">
+        <div class="one">
+            <p class="item1"><img src="1.png" alt="Аквила"></p>
+            <p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque sint totam deserunt porro necessitatibus, sunt harum ab quas,
+                magnam laudantium quia dicta id aspernatur facere.
+            </p>
+            <button class="item3">Learn more</button>
+        </div>
+        <div class="one">
+            <p class="item1"><img src="1.png" alt="Аквила"></p>
+            <p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque sint totam deserunt porro necessitatibus, sunt harum ab quas,
+                magnam laudantium quia dicta id aspernatur facere.
+            </p>
+            <button class="item3">Learn more</button>
+        </div>
+        <div class="one">
+            <p class="item1"><img src="1.png" alt="Аквила"></p>
+            <p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque sint totam deserunt porro necessitatibus, sunt harum ab quas,
+                magnam laudantium quia dicta id aspernatur facere.
+            </p>
+            <button class="item3">Learn more</button>
+        </div>
+    </div>
 </body>
+
+</html>
