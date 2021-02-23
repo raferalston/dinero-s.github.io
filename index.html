@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аквила</title>
+    <title>Document</title>
     <style>
         body {
             margin: 0px;
@@ -13,77 +13,76 @@
 
         .container {
             display: flex;
-            /* flex-wrap: wrap; */
-            /* align-content: space-between; */
-            /* flex-direction: row; */
-            justify-content: space-between;
-
-            color: cornsilk;
+            flex-direction: column;
+            flex-basis: 20%;
             text-align: center;
-            width: 300px;
-            /* border: 2px solid black; */
-            padding: 0px;
-
-        }
-
-        img {
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
-
-        .item2 {
-            background-color: brown;
-            height: 100px;
-            margin-top: -20px;
-            margin-bottom: 5px;
-        }
-
-        .item3 {
-            background-color: rgb(28, 82, 153);
-            height: 30px;
-            width: 300px;
-            margin-top: -20px;
-            font-size: 1.5em;
-            cursor: pointer;
-            border-bottom: 5px;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            margin: 0px;
             color: white;
-            font-family: 'Times New Roman', Times, serif;
         }
 
-        button :hover {
-            border: 2px solid black;
+        .navbar {
+            position: absolute;
+            width: 20%;
+            height: 100vh;
+            background-color: blue;
+        }
 
+        .one {
+            position: relative;
+            width: 80%;
+            height: 10.8vh;
+            background-color: rgb(223, 11, 22);
+            margin-left: 20%;
+        }
+
+        .two {
+            position: relative;
+            width: 40%;
+            height: 89.2vh;
+            background-color: rgb(28, 119, 66);
+            /* margin-top: 10em; */
+            margin-left: 20%;
+        }
+
+        .three {
+            position: relative;
+            width: 40%;
+            height: 89.2vh;
+            background-color: rgb(208, 211, 52);
+            margin-left: 60%;
+            margin-top: -89.2vh;
+        }
+        p {
+            font-size: 2em;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2em;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <nav class="navbar">
+            <h1>Меню</h1>
+        </nav>
         <div class="one">
-            <p class="item1"><img src="1.png" alt="Аквила"></p>
-            <p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eaque sint totam deserunt porro necessitatibus, sunt harum ab quas,
-                magnam laudantium quia dicta id aspernatur facere.
-            </p>
-            <button class="item3">Learn more</button>
+            <h1>Заголовок</h1>
         </div>
-        <div class="one">
-            <p class="item1"><img src="1.png" alt="Аквила"></p>
-            <p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eaque sint totam deserunt porro necessitatibus, sunt harum ab quas,
-                magnam laudantium quia dicta id aspernatur facere.
+        <div class="two">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Optio explicabo nostrum, nemo laudantium accusamus iusto qui 
+                vel quae dignissimos unde maxime minus? Quod voluptas numquam 
+                quis tempora delectus amet perferendis..
             </p>
-            <button class="item3">Learn more</button>
         </div>
-        <div class="one">
-            <p class="item1"><img src="1.png" alt="Аквила"></p>
-            <p class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eaque sint totam deserunt porro necessitatibus, sunt harum ab quas,
-                magnam laudantium quia dicta id aspernatur facere.
+        <div class="three">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Optio explicabo nostrum, nemo laudantium accusamus iusto qui 
+                vel quae dignissimos unde maxime minus? Quod voluptas numquam 
+                quis tempora delectus amet perferendis..
             </p>
-            <button class="item3">Learn more</button>
         </div>
     </div>
 </body>
