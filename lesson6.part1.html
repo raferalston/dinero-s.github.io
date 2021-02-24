@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            
+        }
+        .menu {
+            flex-basis: 20%;
+            background-color: rgb(14, 99, 70);
+            text-align: center;
+            /* font-size: 2em; */
+            padding-left: 3%;
+            padding-right: 3%;
+            color: white;
+            /* font-size: 900; */
+            
+        }
+        .inner-wrapper {
+            display:flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .header {
+            display: flex;
+            flex-basis: 20%;
+            background-color: rgb(190, 47, 66); 
+            align-items: center;
+            text-align: center;
+            /* font-size: 2em; */
+            padding-left: 45%;
+            color: white;
+        }
+        .left-right-wrapper {
+            display: flex;
+            flex-grow: 1;
+        }
+        .left {
+            display: flex;
+            background-color: rgb(37, 68, 153);
+            flex-grow: 1;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+            color: white;
+        }
+        .right {
+            display: flex;
+            background-color: rgb(202, 189, 6);
+            flex-grow: 1;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Menu</h1>
+        </div>
+        <div class="inner-wrapper">
+            <div class="header">
+                <h1>Заголовок</h1>
+            </div>
+            <div class="left-right-wrapper">
+                <div class="left">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Aperiam sint voluptate natus non explicabo fugiat, dolorum
+                          quidem. Laboriosam reprehenderit inventore veritatis quisquam
+                           tempore temporibus soluta quas, vitae blanditiis assumenda.
+                           Optio!
+                    </p>
+                </div>
+                <div class="right">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Aperiam sint voluptate natus non explicabo fugiat, dolorum
+                         quidem. Laboriosam reprehenderit inventore veritatis quisquam
+                          tempore temporibus soluta quas, vitae blanditiis assumenda.
+                          Optio!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
