@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .item {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            height: 215px;
+            width: 400px;
+            background-color:rgb(92, 28, 122);
+            border-radius: 10px;
+        }
+        .item-2 {
+            height: 215px;
+            width: 400px;
+            background-color:rgb(40, 26, 90);
+            border-radius: 10px;
+        }
+        .item:hover {
+            transform: translate(-5px, -5px);
+            transition: all 0.5s;
+
+        }
+        
+        .search-1, .search-2 {
+            height: 20px;
+            width: 350px; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .search-2 {
+            margin-bottom: 20px;
+        }
+        .knock {
+            height: 35px;
+            width: 360px;
+            background-color: rgb(236, 233, 18);
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .name, .mail {
+            font-size: 1.5em;
+            color:cornsilk;
+            margin-bottom: 7px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-2">
+
+        </div>
+        <div class="item">
+            <form action ="" class = "form"></form>
+                <div class="name">Введите имя:</div>
+                <input type="text" name="" id="" class="search-1">
+                <div class="mail">Ваш e-mail:</div>
+                <input type="text" name="" id="" class="search-2">
+                <input type="submit" value="Поиск" class="knock">
+            </form>
+        </div>
+        
+    </div>
+</body>
+
+</html>

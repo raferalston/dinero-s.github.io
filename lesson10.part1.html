@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 50px;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+        #search {
+            width: 340px;
+            height: 33px;
+            /* border-bottom-left-radius: 10px;
+            border-top-left-radius: 5px; */
+            margin-right: 3px;
+        }
+        .knock {
+            width: 140px;
+            height: 39px;
+            background-color: rgb(156, 198, 223);
+        }
+        /* .knock::before {
+            content:"";
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action ="https://google.com" class = "form">
+            <input type = "text" name = "" id = "search">
+            <input type = "submit" value = "ПОИСК" class = "knock">
+        </form>
+    </div>
+</body>
+</html>
