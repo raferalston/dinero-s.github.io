@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+        }
+        .ball-1 {
+            position: relative;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: yellow;
+            /* left: -40px; */
+            animation: ball1 5s linear infinite;  
+        }
+        .ball-2 {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: rgb(250, 0, 0);
+            left: -40px;
+            animation: ball2 6s linear 2s infinite;  
+        }
+        @keyframes ball1 {
+            0% {
+                transform: translate(0px, -50px);
+            }
+            20% {
+                transform: translate(273px, 50px);
+            }
+            40% {
+                transform: translate(546px, -50px);
+            }
+        
+            60% {
+                transform: translate(819px, 50px);
+            }
+            80% {
+                transform: translate(1092px, -80px);
+            } 
+            100% {
+                transform: translate(1366px, 50px);
+            }
+        }
+        @keyframes ball2 {
+            0% {
+                transform: translate(0px, -50px);
+            }
+            20% {
+                transform: translate(273px, 50px);
+            }
+            40% {
+                transform: translate(546px, -50px);
+            }
+        
+            60% {
+                transform: translate(819px, 50px);
+            }
+            80% {
+                transform: translate(1092px, -80px);
+            } 
+            100% {
+                transform: translate(1366px, 50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball-1"></div>
+        <div class="ball-2"></div>
+
+    </div>
+    
+</body>
+</html>
