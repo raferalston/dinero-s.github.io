@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .bgimg-1, .bgimg-2 {
+            height: 90vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.95;
+        }
+        .bgimg-1 {
+            background-image: url("forest-1.jpg");
+        }
+        .bgimg-2 {
+            background-image: url("forest-2.jpg");
+        }
+        
+        div p {
+            display: flex;
+            height: 20vh;
+            background-color: rgb(40, 105, 102);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            font-size: 10vh;
+            font-family: sans-serif;
+        }
+        .caption-1 {
+            margin: 0px;
+            height: 100vh;
+        }
+        .caption-2 {
+            margin: 0px;
+            height: 90vh;
+        }
+        
+        .border-1, .border-2, .border-3, .border-4, .border-5 {
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
+        .border-1 {
+            position: relative;
+            animation: border-1 3s linear 2s infinite;
+        }
+        @keyframes border-1 {
+            0% {
+                
+                top: 0px;
+            }
+            100% {
+                
+                top: 620px;
+            }
+        }
+        .border-2 {
+            position: relative;
+            animation: border-2 3s linear 3s infinite;
+        }
+        @keyframes border-2 {
+            0% {
+                left: 200px;
+                top: 0px;
+            }
+            100% {
+                left: 200px;
+                top: 600px;
+            }
+        }
+        .border-3 {
+            position: relative;
+            animation: border-3 3s linear 1s infinite;
+        }
+        @keyframes border-3 {
+            0% {
+                left: 400px;
+                top: 0px;
+            }
+            100% {
+                left: 400px;
+                top: 600px;
+            }
+        }
+        .border-4 {
+            position: relative;
+            animation: border-4 3s linear 3.5s infinite;
+        }
+        @keyframes border-4 {
+            0% {
+                left: -200px;
+                top: 0px;
+            }
+            100% {
+                left: -200px;
+                top: 600px;
+            }
+        }
+        .border-5 {
+            position: relative;
+            top: 0px;
+            animation: border-5 3s linear 2.5s infinite;
+        }
+        @keyframes border-5 {
+            0% {
+                left: -400px;
+                top: 0px;
+            }
+            100% {
+                left: -400px;
+                top: 600px;
+            }
+        }
+
+        
+
+        .border-6, .border-7, .border-8, .border-9, .border-0 {
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
+        .border-6 {
+            position: relative;
+            top: 33px;
+            animation: border-6 3s ease 2s infinite;
+            
+        }
+        @keyframes border-6 {
+            0% {
+                
+                top: 0px;
+            }
+            100% {
+                
+                top: 550px;
+            }
+        }
+        .border-7 {
+            position: relative;
+            left: 200px;
+            top: 10px;
+            animation: border-7 3s ease 3s infinite;
+            
+        }
+        @keyframes border-7 {
+            0% {
+                top: 0px;
+                left: 200px;
+            }
+            100% {
+                top: 550px;
+                left: 200px;
+            }
+        }
+        .border-8 {
+            position: relative;
+            left: 400px;
+            top: 5px;
+            animation: border-8 3s ease 1s infinite;
+            
+        }
+        @keyframes border-8 {
+            0% {
+                left: 400px;
+                top: 10px;
+            }
+            100% {
+                left: 400px;
+                top: 550px;
+            }
+        }
+        .border-9 {
+            position: relative;
+            left: -200px;
+            top: 10px;
+            animation: border-9 3s ease 3.5s infinite;
+        }
+        @keyframes border-9 {
+            0% {
+                left: -200px;
+                top: 10px;
+            }
+            100% {
+                left: -200px;
+                top: 550px;
+            }
+        }
+        .border-0 {
+            position: relative;
+            left: -400px;
+            top: 10px;
+            animation: border-0 3s ease 2.5s infinite;
+        }
+        @keyframes border-0 {
+            0% {
+                left: -400px;
+                top: 10px;
+            }
+            100% {
+                left: -400px;
+                top: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg-1">
+        <div class="caption-1">
+            <div class="border-1"></div>
+            <div class="border-2"></div>
+            <div class="border-3"></div>
+            <div class="border-4"></div>
+            <div class="border-5"></div>
+        </div>
+    </div>
+    <div>
+        <p>
+        Сделал сам! :)
+        </p>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption-2">
+            <div class="border-6"></div>
+            <div class="border-7"></div>
+            <div class="border-8"></div>
+            <div class="border-9"></div>
+            <div class="border-0"></div>
+        </div>
+    </div>
+</body>
+
+</html>
