@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left, .right, .general {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            font-family: sans-serif;
+        }
+        .left {
+            height: 20vh;
+            width: 20vw;
+            background-color: rgb(0, 139, 132);
+        }
+        .general {
+            height: 20vh;
+            width: 60vw;
+            background-color: rgb(74, 221, 16);
+        }
+        .right {
+            height: 20vh;
+            width: 20vw;
+            background-color: rgb(223, 238, 13);
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+            .left {
+                width: 100vw;
+            }
+            .general {
+                width: 100vw;
+            }
+            .right {
+                width: 100vw;
+            }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">Левый элемент</div>
+        <div class="general">Главный элемент</div>
+        <div class="right">Правый элемент</div>
+    </div>
+</body>
+</html>
