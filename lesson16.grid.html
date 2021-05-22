@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            height: 100%;
+            grid-template-rows: 2fr 2fr 4fr;
+            grid-template-columns: 4fr 7fr 4fr;
+            font-family:cursive;
+        }
+        .img {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(116, 160, 255);
+        }
+        nav {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgb(79, 40, 129);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5em;
+        }
+        .life {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(222, 245, 122);
+            color: rgb(91, 91, 209);
+            font-size: 3em;
+        }
+        .text {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: rgb(247, 244, 250);
+            flex-direction: column;
+            color: rgb(76, 19, 141);
+            font-size: 1.4em;
+            padding: 2em;
+        }
+        .personal {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: rgb(222, 245, 122);
+            color: rgb(236, 95, 39);
+            font-size: 3em;
+        }
+        .flower {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: rgb(167, 71, 159);
+        }
+        .life, .personal, .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            width: 1em;
+            height: 0.1em;
+            background-color: rgb(91, 91, 209);
+            margin: 0.2em;
+        }
+        .exp {
+            position: absolute;
+            color: rgb(236, 95, 39);
+            font-size: 2em;
+            background-color: rgb(247, 244, 250);
+            padding: -0.2em;
+            margin-left: 11em;
+            margin-top: 8.5em;
+        }
+        .gamburger, .gamburger::before, .gamburger::after {
+            display: block;
+            position: absolute;
+            width: 3em;
+            height: 0.3em;
+            background-color: white;
+            cursor: pointer;
+        }
+        .gamburger::after {
+            content: "";
+            top: 0.7em;
+        }
+        .gamburger::before {
+            content: "";
+            top: -0.7em;;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .link {
+            width: 22em;
+            height: 4em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 4em;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src = "" class = "girl">
+        </div>
+        <nav>
+            <div class="logo">
+                My Portfolio
+            </div>
+            <div class="link">
+                <a href="">home</a>
+                <a href="">about</a>
+                <div class="gamb">
+                    <div class="gamburger"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="life">
+            <span></span>Life<span></span>
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, saepe sequi nobis ratione exercitationem alias itaque, et quam magnam excepturi quisquam? Voluptatem repellat earum deserunt praesentium recusandae facilis veritatis nobis?
+            adipisicing elit. exercitationem alias itaque, et quam magnam excepturi quisquam? Voluptatem repellat earum deserunt praesentium recusandae facilis veritatis nobis?
+            <div class="exp">
+                Expression
+            </div>
+        </div>
+        <div class="personal">
+            Personal
+        </div>
+        <div class="flower">
+            <img src = "" class = "flo">
+        </div>
+    </div>  
+</body>
+</html>
