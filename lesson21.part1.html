@@ -8,14 +8,14 @@
 </head>
 <body>
     <script>
-        let num = prompt("введите первое число");
-        let num2 = prompt("введите второе число");
+        let num = Number(prompt("введите первое число"));
+        let num2 = +prompt("введите второе число");
 
-        if(1000<=num + num2) {
-            window.alert("сумма этих чисел" + " " + (parseInt(num, 10) + parseInt(num2, 10)));
+        if(1000<= num + num2) {
+            window.alert("сумма этих чисел" + " " + num + num2));
         } 
         else {
-            window.alert("произведение этих чисел" + " " + (parseInt(num, 10) * parseInt(num2, 10)));
+            window.alert("произведение этих чисел" + " " + num, 10 * num2);
         }
     </script>
 </body>
