@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let words = ['apple', 'barbarian', 'glory'];
+
+        let word = words[Math.floor(Math.random() * words.length)];
+
+        let template = [];
+
+        for (let i = 0; i < word.length; i++) {
+            template.push('_');
+        }
+
+        let remainLetters = word.length;
+
+        let level = prompt("Выбери сложность от 1 до 2");
+
+        alert('Я загадал слово состоящее из ' + remainLetters + ' букв попробуй угадай!');
+        alert(word);
+
+        
+
+        if (level === 1) {
+            
+            if (level == 0) {
+                alert("Введите цифру 1 или 2");
+            } else {
+                let attempt = 10;
+                while (remainLetters > 0) {
+                    alert(template.join(''));
+                    let guesses = prompt("Осталось " + attempt + " попыток. Введите букву: ");
+                    let guess = guesses.toLowerCase();
+                    attempt--;
+                    if (guess === null) {
+                        break;
+                    }
+                    else if (guess == 0) {
+                        alert("Введите букву!");
+                    }
+                    else if (guess.length > 1) {
+                        alert("Введите одну букву!");
+                    }
+                    else if (attempt > 0) {
+                        for (let i = 0; i <= word.length; i++) {
+                            // console.log(i);
+                            if (guess == template[i]) {
+                                alert("Эта буква уже есть")
+                            }
+                            else if (guess == word[i]) {
+                                console.log(true);
+                                template[i] = guess;
+                                console.log(template);
+                                remainLetters--;
+                            }
+                            else if (remainLetters == 0) {
+                                alert("Вы победили!");
+                            }
+                        }
+                    }
+                    else if (attempt === 0) {
+                        alert("Вы проиграли! Попытки закончились!");
+                        break;
+                    }
+                }
+            }
+
+        }
+        else if (level === 2) {
+            if (level == 0) {
+                alert("Введите цифру 1 или 2");
+            } else {
+                let attempt = 15;
+                while (remainLetters > 0) {
+                    alert(template.join(''));
+                    let guesses = prompt("Осталось " + attempt + " попыток. Введите букву: ");
+                    let guess = guesses.toLowerCase();
+                    attempt--;
+                    if (guess === null) {
+                        break;
+                    }
+                    else if (guess == 0) {
+                        alert("Введите букву!");
+                    }
+                    else if (guess.length > 1) {
+                        alert("Введите одну букву!");
+                    }
+                    else if (attempt > 0) {
+                        for (let i = 0; i <= word.length; i++) {
+                            // console.log(i);
+                            if (guess == template[i]) {
+                                alert("Эта буква уже есть")
+                            }
+                            else if (guess == word[i]) {
+                                console.log(true);
+                                template[i] = guess;
+                                console.log(template);
+                                remainLetters--;
+                            }
+                            else if (remainLetters == 0) {
+                                alert("Вы победили!");
+                            }
+                        }
+                    }
+                    else if (attempt === 0) {
+                        alert("Вы проиграли! Попытки закончились!");
+                        break;
+                    }
+                }
+            }
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
